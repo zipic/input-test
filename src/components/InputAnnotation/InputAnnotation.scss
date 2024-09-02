@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.annotation {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 12px;
+  width: 323px;
+
+  &--light {
+    color: #51525c;
+  }
+
+  &--dark {
+    color: #a0a0ab;
+  }
+
+  &--error {
+    color: #d92d20;
+  }
+
+  &--default {
+    color: inherit;
+  }
+
+  &--extra-small {
+    font-size: 12px;
+  }
+
+  &--medium {
+    font-size: 12px;
+  }
+
+  &--large {
+    font-size: 14px;
+  }
+
+  &--extra-large {
+    font-size: 14px;
+  }
+}

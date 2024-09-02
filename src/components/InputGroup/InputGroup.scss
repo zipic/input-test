@@ -1,0 +1,16 @@
+.input-group {
+  &-light,
+  &-dark {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+  }
+  &-light {
+    background-color: none;
+  }
+
+  &-dark {
+    background-color: #1a1a1e;
+  }
+}

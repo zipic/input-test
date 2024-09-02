@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.input-wrapper {
+  display: flex;
+  width: 343px;
+  position: relative;
+}
+
+.search {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  filter: grayscale(100%) brightness(1.7);
+
+  &-error {
+    filter: none;
+  }
+}
+.help {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  filter: grayscale(100%) brightness(1.7);
+  top: 11px;
+  right: 48px;
+
+  &-error {
+    filter: none;
+  }
+}
+.add {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  filter: grayscale(100%) brightness(1.7);
+  top: 3px;
+  right: 8px;
+
+  &-error {
+    filter: none;
+  }
+}
+.input {
+  display: flex;
+  width: 343px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #d1d1d6;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 73px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &-extra-small-disabled,
+  &-medium-disabled {
+    background: #fff;
+    &::placeholder {
+      font-size: 12px;
+      color: #d1d1d6;
+    }
+  }
+
+  &-large-disabled,
+  &-extra-large-disabled {
+    background: #fff;
+    &::placeholder {
+      font-size: 14px;
+      color: #d1d1d6;
+    }
+  }
+
+  &-extra-small-error,
+  &-medium-error {
+    border: 1px solid #d92d20;
+    &::placeholder {
+      font-size: 12px;
+      color: #70707b;
+    }
+
+    &:focus::placeholder {
+      color: #1a1a1e;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 2px #fda29b;
+    }
+  }
+
+  &-large-error,
+  &-extra-large-error {
+    border: 1px solid #d92d20;
+
+    &::placeholder {
+      padding-left: 0;
+      font-size: 14px;
+      color: #70707b;
+    }
+
+    &:focus::placeholder {
+      color: #1a1a1e;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 2px #fda29b;
+    }
+  }
+
+  &-extra-small-deffault,
+  &-medium-deffault {
+    font-size: 12px;
+    &:focus {
+      box-shadow: 0 0 0 2px #84caff;
+    }
+
+    &:focus::placeholder {
+      color: #1a1a1e;
+    }
+
+    &:hover::placeholder {
+      color: #1a1a1e;
+    }
+  }
+
+  &-large-deffault,
+  &-extra-large-deffault {
+    border: 1px solid #2e90fa;
+    font-size: 14px;
+    &:focus {
+      box-shadow: 0 0 0 2px #84caff;
+    }
+
+    &:focus::placeholder {
+      border: 1px solid 2e90FA;
+      color: #1a1a1e;
+    }
+    &:hover::placeholder {
+      color: #1a1a1e;
+    }
+  }
+}
+
+.input-light {
+  color: #1a1a1e;
+
+  &::placeholder {
+    color: #70707b;
+  }
+}
+
+.input-dark {
+  color: #fff;
+  background: #131316;
+
+  &::placeholder {
+    color: #fff;
+  }
+
+  &:hover::placeholder {
+    color: #fff;
+  }
+}

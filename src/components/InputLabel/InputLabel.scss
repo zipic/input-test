@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.input-label {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  max-width: 245px;
+  font-weight: 500;
+  gap: 3px;
+
+  &--extra-small,
+  &--medium {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &--large,
+  &--extra-large {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &--light {
+    color: #1a1a1e;
+  }
+  &--dark {
+    color: #fff;
+  }
+}
+
+.input-label-text {
+  max-width: 245px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  white-space: normal;
+  hyphens: auto;
+}
+
+.icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  color: #a0a0ab;
+}
+
+.input-label--extra-small .icon.error::before,
+.input-label--medium .icon.error::before {
+  content: "*";
+  color: #d92d20;
+  font-size: 12px;
+  position: absolute;
+  top: -1px;
+}
+
+.input-label--large .icon.error::before,
+.input-label--extra-large .icon.error::before {
+  content: "*";
+  color: #d92d20;
+  font-size: 12px;
+  position: absolute;
+  top: -1px;
+}
