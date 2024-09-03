@@ -17,4 +17,4 @@ The component can be thoroughly tested and previewed using Storybook.
 - git clone https://github.com/zipic/input-test
 - cd input-test
 - npm install
-- npm start
+- npm run storybook
